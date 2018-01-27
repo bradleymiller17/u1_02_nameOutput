@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:u1_02_nameOutput"
+             x:Class="u1_02_nameOutput.MainPage">
+    <ScrollView>
+    <StackLayout
+    Padding="10,0">
+        <Label Text="Output Example"
+               FontSize="Large" />
+        <Slider
+            Maximum="100"
+            ValueChanged="sliderChanged"
+            x:Name="sliderNumber"
+            />
+        <Label Text="Welcome to Xamarin Forms!" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center"
+           x:Name="sliderOutput"    />
+        <Stepper
+            x:Name="stepperNumber"
+             ValueChanged="Stepper_ValueChanged"
+            />
+        <Label
+            x:Name="stepperOutput" />
+        <Switch
+            x:Name="switchTF"
+            Toggled="switchTF_Toggled"
+            />
+        <Label
+            x:Name="switchOutput"
+            ></Label>
+        <Entry
+            x:Name="entryInput"
+            TextChanged="entryInput_TextChanged"
+            />
+        <Label
+            x:Name="entryOutput"
+            />
+        <Editor
+            x:Name="editorInput"
+            TextChanged="editorInput_TextChanged"
+            />
+        <Label
+            x:Name="editorOutput"
+            />
+        <SearchBar
+            x:Name="searchInput"
+            TextChanged="searchInput_TextChanged"
+            />
+        <Label
+            x:Name="searchOutput"
+            />
+        <DatePicker
+            x:Name="datePickerInput"
+            DateSelected="datePickerInput_DateSelected"
+            />
+        <Label
+            x:Name="datePickerOutput"
+            />
+        <TimePicker
+            x:Name="timePickerInput"
+            PropertyChanged="timePickerInput_PropertyChanged"
+            />
+        <Label
+            x:Name="timePickerOutput"
+            />
+            <Image Source="https://www.google.ca/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" 
+                   x:Name="imageOutput"
+                   />
+            <Button x:Name="btnChangeImage"
+                    Text="Change Image"
+               Clicked="btnChangeImage_Clicked"
+                />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
